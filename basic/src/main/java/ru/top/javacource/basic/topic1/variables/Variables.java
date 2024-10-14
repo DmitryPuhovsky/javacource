@@ -15,8 +15,7 @@ public class Variables {
      * При запуске java программы, выполнение всегда начинается с метода main
      */
     public static void main(String[] args) {
-        //Параметры метода и все переменные созданные внутри метода
-        //являются локальными переменными
+        //Параметры метода и все переменные, созданные внутри метода, являются локальными переменными
 
 
         //Имя переменной может содержать с буквы, цифры, $, _
@@ -39,23 +38,23 @@ public class Variables {
 
 
         //Создание константы
-        final int intConst = 4;
-        //intConst = 5; //ошибка, нельзя изменять значение константы
+        final int INT_CONST = 4;
+        //intConst = 5; //Ошибка, нельзя изменять значение константы
 
 
         //Присваивание значения одной переменной другой переменной
-        localIntNumber = intConst;
+        localIntNumber = INT_CONST;
 
 
         //Безопасное присваивание
         longNumber = localIntNumber;
         //Небезопасное присваивание, которое требует преобразование типа
-        localIntNumber = (int) longNumber; // (тип данных) - это операция преобразования типа
+        localIntNumber = (int) longNumber; //(тип_данных) - это операция преобразования типа
 
 
         //Создание обертки для типа int присваивание значения
-        Integer fromInt = 10; //упаковка (boxing)
-        int fromInteger = 10; //распаковка (unboxing)
+        Integer fromInt = 10; //Упаковка (boxing)
+        int fromInteger = 10; //Распаковка (unboxing)
 
 
         Long longObject = null;
@@ -71,6 +70,6 @@ public class Variables {
      * Метод, который выводит значение переменной типа long в консоль
      */
     public static void method(long longParam) {
-        System.out.println(longParam); // вывод значения переменной консоль
+        System.out.println(longParam); //Вывод значения переменной консоль
     }
 }
