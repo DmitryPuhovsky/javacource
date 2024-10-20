@@ -1,5 +1,8 @@
 package ru.top.javacource.basic.topic1.variables;
 
+/**
+ * Переменные
+ */
 public class Variables {
     /**
      * Переменная класса

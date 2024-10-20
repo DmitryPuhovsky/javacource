@@ -1,13 +1,13 @@
 package ru.top.javacource.basic.topic2.operators;
 
+/**
+ * Операторы
+ */
 public class Operators {
 
     public static void main(String[] args) {
 
-        //Оператор присваивания позволяет записать значение в переменную
-        int number = 12;
-        //------------------------------------------------------------
-
+        int number = 12;  //Оператор присваивания позволяет записать значение в переменную
 
         //Арифметические операторы
         int sumRes = 1 + 2;
