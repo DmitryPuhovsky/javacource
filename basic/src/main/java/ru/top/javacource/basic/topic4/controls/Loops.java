@@ -1,9 +1,6 @@
 package ru.top.javacource.basic.topic4.controls;
 
-/**
- * Управляющие конструкции
- */
-public class Controls {
+public class Loops {
 
     public static void main(String[] args) {
 
