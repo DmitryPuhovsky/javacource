@@ -1,5 +1,7 @@
 package ru.top.javacource.basic.topic4.controls;
 
+import java.util.Iterator;
+
 public class Loops {
 
     public static void main(String[] args) {
@@ -36,6 +38,11 @@ public class Loops {
             System.out.println(string);
         }
 
+        //Цикл forEach можно использовать с любым объектом, который имплементирует интерфейс Iterable.
+        IntNumberGenerator intNumberGenerator = new IntNumberGenerator(0, 10);
+        for (int number : intNumberGenerator) {
+            System.out.println(number);
+        }
 
         //Цикл while, который является аналогом первого цикла for и выводит в консоль все элементы массива.
         int j = 0;
@@ -81,5 +88,31 @@ public class Loops {
                 n++;
             }
         }
+    }
+}
+
+class IntNumberGenerator implements Iterable<Integer> {
+
+    private int from;
+    private int to;
+
+    public IntNumberGenerator(int from, int to) {
+        this.from = from;
+        this.to = to;
+    }
+
+    @Override
+    public Iterator<Integer> iterator() {
+        return new Iterator<>() {
+            @Override
+            public boolean hasNext() {
+                return from <= to;
+            }
+
+            @Override
+            public Integer next() {
+                return from++;
+            }
+        };
     }
 }
